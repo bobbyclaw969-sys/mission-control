@@ -16,22 +16,25 @@ interface Agent {
   role: string;
   status: 'working' | 'idle' | 'thinking';
   specialty: string;
+  code: string;
 }
 
 // Initial Data
 const agents: Agent[] = [
-  { id: '1', name: 'permit-lead-coo', role: 'COO / Lead Gen', status: 'working', specialty: 'Permit Research' },
-  { id: '2', name: 'apify', role: 'Scraper', status: 'idle', specialty: 'Data Collection' },
-  { id: '3', name: 'conway-money', role: 'CFO / Ops', status: 'thinking', specialty: 'Operations' },
-  { id: '4', name: 'ai-csuite', role: 'Executive', status: 'working', specialty: 'Strategy' },
+  { id: '1', name: 'Sarah', role: 'COO / Lead Gen', status: 'working', specialty: 'Permit Research', code: 'permit-lead-coo' },
+  { id: '2', name: 'Mike', role: 'Scraper', status: 'idle', specialty: 'Data Collection', code: 'apify' },
+  { id: '3', name: 'Alex', role: 'CFO / Ops', status: 'thinking', specialty: 'Operations', code: 'conway-money' },
+  { id: '4', name: 'Jordan', role: 'Executive', status: 'working', specialty: 'Strategy', code: 'ai-csuite' },
+  { id: '5', name: 'Sam', role: 'Designer', status: 'idle', specialty: 'Web Design', code: 'web-designer' },
 ];
 
 const tasks: Task[] = [
-  { id: '1', title: 'Query SF Permit API for new leads', status: 'in-progress', assignee: 'permit-lead-coo' },
-  { id: '2', title: 'Email contractors from leads', status: 'todo', assignee: 'permit-lead-coo' },
-  { id: '3', title: 'Weekly strategic review', status: 'in-progress', assignee: 'ai-csuite' },
-  { id: '4', title: 'Monitor compute costs', status: 'todo', assignee: 'conway-money' },
+  { id: '1', title: 'Query SF Permit API for new leads', status: 'in-progress', assignee: 'Sarah' },
+  { id: '2', title: 'Email contractors from leads', status: 'todo', assignee: 'Sarah' },
+  { id: '3', title: 'Weekly strategic review', status: 'in-progress', assignee: 'Jordan' },
+  { id: '4', title: 'Monitor compute costs', status: 'todo', assignee: 'Alex' },
   { id: '5', title: 'Set up Pine Voice auth', status: 'done', assignee: 'human' },
+  { id: '6', title: 'Design new landing page', status: 'todo', assignee: 'Sam' },
 ];
 
 const projects = [
