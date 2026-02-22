@@ -35,7 +35,8 @@ const tasks: Task[] = [
   { id: '5', title: 'Rework Mission Control UI', status: 'in-progress', assignee: 'Sam', priority: 'medium' },
   { id: '6', title: 'Update Permit Finder design', status: 'todo', assignee: 'Sam', priority: 'medium' },
   { id: '7', title: 'Modernize BuilderQuote Pro', status: 'todo', assignee: 'Sam', priority: 'low' },
-  { id: '8', title: 'Set up Conway public API', status: 'todo', assignee: 'Alex', priority: 'high' },
+  { id: '9', title: 'Research Procore features for competitor analysis', status: 'in-progress', assignee: 'Mike', priority: 'high' },
+  { id: '10', title: 'Design simplified construction tool for small contractors', status: 'todo', assignee: 'Sam', priority: 'medium' },
 ];
 
 const projects = [
